@@ -1,0 +1,54 @@
+!
+interface FastEthernet0/0
+ ip address 10.0.0.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Serial0/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface FastEthernet0/1
+ ip address 10.0.123.245 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface Serial2/0
+ ip address 10.0.123.241 255.255.255.252
+ serial restart-delay 0
+ clock rate 128000
+!
+interface Serial2/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface FastEthernet3/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+
+!
+router ospf 92
+ log-adjacency-changes
+ network 10.0.0.0 0.0.255.255 area 0
+!
+router rip
+ version 2
+ network 10.0.0.0
+!
+ip forward-protocol nd
+!
+

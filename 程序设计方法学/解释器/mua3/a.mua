@@ -1,0 +1,9 @@
+make "a 5.0
+make "f [[] []]
+make "find [[lst x] [if isempty thing "lst [output false] [if eq first thing "lst thing "x [output true] [output find butfirst thing "lst thing "x]]]]
+make "length [[x] [if isempty thing "x [output 0] [output add length butfirst thing "x 1]]]
+make "pi 3.14159
+make "index [[lst x] [if isempty thing "lst [output -1] [if eq first thing "lst thing "x [output 0] [make "i index butfirst thing "lst thing "x if eq thing "i -1 [output -1] [output add thing "i 1]]]]]
+make "reverse [[x] [if isempty thing "x [output thing "x] [if islist thing "x [output join reverse butfirst thing "x first thing "x] [output word reverse butfirst thing "x first thing "x]]]]
+print "a
+

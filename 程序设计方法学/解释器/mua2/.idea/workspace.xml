@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8a3ad7e-e48a-402d-a308-bafb85060dd2" name="Default Changelist" comment="MUA p2 passed">
+      <change afterPath="$PROJECT_DIR$/src/src/mua/op/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src.zip" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/Expr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/Func.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/Func.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/Bool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/Bool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/MUAObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/MUAObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/None.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/None.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/Number.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/Word.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/dataType/Word.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/exception/ArgException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/exception/ArithmeticException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/exception/MUAException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/exception/NameException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/exception/SyntaxException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/exception/TypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/interpreter/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/interpreter/Scope$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/interpreter/Scope$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/interpreter/Scope.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/interpreter/Scope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/Erase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/Erase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/Make.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/Make.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/Repeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/Repeat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/func/Export.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/func/Export.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/func/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/func/Output.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/If.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/If.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isbool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isbool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isempty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isempty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Islist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Islist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isnumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isnumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/judge/Isword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Add.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Add.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/And.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/And.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Div.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Div.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Eq.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Eq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Gt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Gt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Lt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Lt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Mod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Mod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Mul.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Mul.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Not.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Not.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Or.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Or.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Sub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/op/operator/Sub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/ArgUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/ArgUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/ParserUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/ParserUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/RunUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/RunUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/TransUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mua2/src/mua/utils/TransUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/Expr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/Func.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/dataType/Bool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/dataType/Bool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/dataType/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/dataType/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/dataType/MUAObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/dataType/MUAObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/dataType/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/dataType/None.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/dataType/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/dataType/Number.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/dataType/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/dataType/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/exception/ArgException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/exception/ArithmeticException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/exception/MUAException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/exception/NameException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/exception/SyntaxException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/exception/TypeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/interpreter/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/interpreter/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/interpreter/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/Erase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/Erase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/Make.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/Make.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/Repeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/Repeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/func/Export.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/func/Export.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/func/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/func/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/judge/If.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/judge/If.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/judge/Isbool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/judge/Isbool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/judge/Isempty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/judge/Isempty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/judge/Islist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/judge/Islist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/judge/Isnumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/judge/Isnumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/judge/Isword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/judge/Isword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/And.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/And.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Div.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Eq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Eq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Gt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Gt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Lt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Lt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Mod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Mod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Mul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Mul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Not.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Not.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Or.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Or.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/op/operator/Sub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/op/operator/Sub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/utils/ArgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/utils/ArgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/utils/ParserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/utils/ParserUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/utils/RunUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/utils/RunUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/mua/utils/TransUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/mua/utils/TransUtil.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1UopEQY7gGBHoFAXBKHtqBgDv6T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="src.mua.Main" />
+      <module name="mua2" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8a3ad7e-e48a-402d-a308-bafb85060dd2" name="Default Changelist" comment="" />
+      <created>1576032689799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576032689799</updated>
+      <workItem from="1576158234274" duration="254000" />
+      <workItem from="1576158646083" duration="4701000" />
+      <workItem from="1576164374016" duration="5140000" />
+      <workItem from="1576171122337" duration="121000" />
+      <workItem from="1576219333532" duration="6264000" />
+    </task>
+    <task id="LOCAL-00001" summary="MUA p2 passed">
+      <created>1576169339529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576169339529</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added expr exit">
+      <created>1576225044373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576225044373</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MUA p2 passed" />
+    <MESSAGE value="added expr exit" />
+    <option name="LAST_COMMIT_MESSAGE" value="added expr exit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576158483247">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="0" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.929@0.0.1707.929" timestamp="1576158483247" />
+    <state x="70" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1210.693@70.27.1210.693" timestamp="1576139334246" />
+    <state x="701" y="354" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576158676416">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="701" y="354" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1707.929@0.0.1707.929" timestamp="1576158676416" />
+    <state x="584" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576171132074">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="584" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1707.929@0.0.1707.929" timestamp="1576171132074" />
+    <state x="2441" y="64" key="CommitChangelistDialog2" timestamp="1576225042129">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2441" y="64" key="CommitChangelistDialog2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576225042129" />
+    <state x="463" y="57" key="CommitChangelistDialog2/0.0.1707.929@0.0.1707.929" timestamp="1576169500649" />
+    <state x="461" y="127" width="424" height="497" key="FileChooserDialogImpl" timestamp="1576032721161">
+      <screen x="70" y="27" width="1210" height="693" />
+    </state>
+    <state x="461" y="127" width="424" height="497" key="FileChooserDialogImpl/70.27.1210.693@70.27.1210.693" timestamp="1576032721161" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1576225606881">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576225606881" />
+    <state width="1663" height="245" key="GridCell.Tab.0.bottom/0.0.1707.929@0.0.1707.929" timestamp="1576169518369" />
+    <state width="1164" height="157" key="GridCell.Tab.0.bottom/70.27.1210.693@70.27.1210.693" timestamp="1576150114578" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1576225606881">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576225606881" />
+    <state width="1663" height="245" key="GridCell.Tab.0.center/0.0.1707.929@0.0.1707.929" timestamp="1576169518369" />
+    <state width="1164" height="157" key="GridCell.Tab.0.center/70.27.1210.693@70.27.1210.693" timestamp="1576150114577" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1576225606881">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576225606881" />
+    <state width="1663" height="245" key="GridCell.Tab.0.left/0.0.1707.929@0.0.1707.929" timestamp="1576169518369" />
+    <state width="1164" height="157" key="GridCell.Tab.0.left/70.27.1210.693@70.27.1210.693" timestamp="1576150114576" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1576225606881">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576225606881" />
+    <state width="1663" height="245" key="GridCell.Tab.0.right/0.0.1707.929@0.0.1707.929" timestamp="1576169518369" />
+    <state width="1164" height="157" key="GridCell.Tab.0.right/70.27.1210.693@70.27.1210.693" timestamp="1576150114577" />
+    <state x="630" y="175" key="RollbackChangesDialog" timestamp="1576167493914">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="630" y="175" key="RollbackChangesDialog/0.0.1707.929@0.0.1707.929" timestamp="1576167493914" />
+    <state x="2242" y="123" width="800" height="541" key="Vcs.Push.Dialog.v2" timestamp="1576225052718">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2242" y="123" key="Vcs.Push.Dialog.v2/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576225052718" />
+    <state x="286" y="109" key="Vcs.Push.Dialog.v2/0.0.1707.929@0.0.1707.929" timestamp="1576169440538" />
+    <state x="273" y="108" width="800" height="541" key="Vcs.Push.Dialog.v2/70.27.1210.693@70.27.1210.693" timestamp="1576150054999" />
+    <state x="2525" y="327" key="com.intellij.ide.util.TipDialog" timestamp="1576219336483">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2525" y="327" key="com.intellij.ide.util.TipDialog/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576219336483" />
+    <state x="538" y="289" key="com.intellij.ide.util.TipDialog/0.0.1707.929@0.0.1707.929" timestamp="1576171123220" />
+    <state x="518" y="256" key="git4idea.merge.GitPullDialog" timestamp="1576169356250">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="518" y="256" key="git4idea.merge.GitPullDialog/0.0.1707.929@0.0.1707.929" timestamp="1576169356250" />
+    <state x="70" y="21" width="1206" height="699" key="new project wizard" timestamp="1576141516707">
+      <screen x="70" y="27" width="1210" height="693" />
+    </state>
+    <state x="70" y="21" width="1206" height="699" key="new project wizard/70.27.1210.693@70.27.1210.693" timestamp="1576141516707" />
+    <state x="510" y="213" key="run.anything.popup" timestamp="1576159072477">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="510" y="213" key="run.anything.popup/0.0.1707.929@0.0.1707.929" timestamp="1576159072477" />
+    <state x="516" y="198" width="672" height="678" key="search.everywhere.popup" timestamp="1576166670167">
+      <screen x="0" y="0" width="1707" height="929" />
+    </state>
+    <state x="516" y="198" width="672" height="678" key="search.everywhere.popup/0.0.1707.929@0.0.1707.929" timestamp="1576166670167" />
+  </component>
+</project>

@@ -1,0 +1,23 @@
+!
+interface FastEthernet0/1
+ ip address 192.168.78.8 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet2/0
+ ip address 192.168.28.8 255.255.255.0
+ duplex auto
+ speed auto
+!
+router bgp 65008
+ no synchronization
+ bgp log-neighbor-changes
+ network 192.168.28.0
+ network 192.168.78.0
+ neighbor 192.168.28.2 remote-as 65002
+ neighbor 192.168.78.7 remote-as 65007
+ neighbor 192.168.78.7 distribute-list 1 out
+ no auto-summary
+!
+ip forward-protocol nd
+!

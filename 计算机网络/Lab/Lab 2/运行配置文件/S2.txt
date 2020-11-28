@@ -1,0 +1,94 @@
+Switch#s runn
+Building configuration...
+
+Current configuration : 1311 bytes
+!
+version 12.1
+no service pad
+service timestamps debug uptime
+service timestamps log uptime
+no service password-encryption
+!
+hostname Switch
+!
+!
+ip subnet-zero
+!
+!
+spanning-tree mode pvst
+no spanning-tree optimize bpdu transmission
+spanning-tree extend system-id
+!
+!
+!
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+ switchport access vlan 2
+ switchport mode access
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+ switchport mode trunk
+ spanning-tree vlan 1 port-priority 16
+!
+interface FastEthernet0/6
+ switchport mode trunk
+ spanning-tree vlan 2 port-priority 16
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+ switchport mode trunk
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface Vlan1
+ ip address 10.1.0.5 255.0.0.0
+ no ip route-cache
+ shutdown
+!
+ip http server
+!
+line con 0
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
+end

@@ -1,0 +1,23 @@
+!
+interface Loopback0
+ ip address 10.2.80.1 255.255.255.252
+!
+interface FastEthernet0/0
+ ip address 10.2.0.2 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 10.2.1.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ ip address 10.2.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+router ospf 92
+ log-adjacency-changes
+ network 10.2.0.0 0.0.255.255 area 2
+!

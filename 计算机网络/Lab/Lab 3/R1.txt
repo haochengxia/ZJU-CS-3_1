@@ -1,0 +1,315 @@
+R1#show running-config
+Building configuration...
+
+Current configuration : 2056 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+ip auth-proxy max-nodata-conns 3
+ip admission max-nodata-conns 3
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.1
+ encapsulation dot1Q 1 native
+ ip address 10.0.0.2 255.255.255.0
+!
+interface FastEthernet0/0.2
+ encapsulation dot1Q 2
+ ip address 10.0.1.2 255.255.255.0
+!
+interface Serial0/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface FastEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface Serial0/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/2
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/3
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet2/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet3/0
+
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int f0/0
+R1(config-if)#no shutdown
+R1(config-if)#exit
+R1(config)#
+*Mar  1 00:04:36.139: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state t                                                                                                                                   o up
+*Mar  1 00:04:37.139: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthern                                                                                                                                   et0/0, changed state to up
+R1(config)#sh ip route
+             ^
+% Invalid input detected at '^' marker.
+
+R1(config)#exit
+R1#show running-config
+*Mar  1 00:10:39.515: %SYS-5-CONFIG_I: Configured from console by console
+R1#sh ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     10.0.0.0/24 is subnetted, 2 subnets
+C       10.0.0.0 is directly connected, FastEthernet0/0.1
+C       10.0.1.0 is directly connected, FastEthernet0/0.2
+R1#show running-config
+Building configuration...
+
+Current configuration : 2046 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+ip auth-proxy max-nodata-conns 3
+ip admission max-nodata-conns 3
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.1
+ encapsulation dot1Q 1 native
+ ip address 10.0.0.2 255.255.255.0
+!
+interface FastEthernet0/0.2
+ encapsulation dot1Q 2
+ ip address 10.0.1.2 255.255.255.0
+!
+interface Serial0/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface FastEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface Serial0/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/2
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/3
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet2/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet3/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet4/0
+!
+interface FastEthernet4/1
+!
+interface FastEthernet4/2
+!
+interface FastEthernet4/3
+!
+interface FastEthernet4/4
+!
+interface FastEthernet4/5
+!
+interface FastEthernet4/6
+!
+interface FastEthernet4/7
+!
+interface FastEthernet4/8
+!
+interface FastEthernet4/9
+!
+interface FastEthernet4/10
+!
+interface FastEthernet4/11
+!
+interface FastEthernet4/12
+!
+interface FastEthernet4/13
+!
+interface FastEthernet4/14
+!
+interface FastEthernet4/15
+!
+interface Vlan1
+ no ip address
+!
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+no cdp log mismatch duplex
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login
+!
+!
+end
+

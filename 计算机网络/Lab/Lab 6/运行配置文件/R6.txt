@@ -1,0 +1,39 @@
+!
+ipv6 unicast-routing
+!
+interface FastEthernet0/0
+ ip address 192.168.67.6 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ ipv6 address FEC0::6500:601:6/112
+!
+interface FastEthernet2/0
+ ip address 192.168.16.6 255.255.255.0
+ duplex auto
+ speed auto
+ ipv6 address FEC0::6500:16:6/112
+!
+router bgp 65006
+ no synchronization
+ bgp log-neighbor-changes
+ network 192.168.16.0
+ network 192.168.67.0
+ neighbor 192.168.16.1 remote-as 65001
+ neighbor 192.168.67.7 remote-as 65007
+ neighbor FEC0::6500:16:1 remote-as 65001
+ no neighbor FEC0::6500:16:1 activate
+ no auto-summary
+ !
+ address-family ipv6
+  neighbor FEC0::6500:16:1 activate
+  network FEC0::6500:16:0/112
+  network FEC0::6500:601:0/112
+ exit-address-family
+!
+ip forward-protocol nd
+!

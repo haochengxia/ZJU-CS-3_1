@@ -1,0 +1,31 @@
+!
+interface Loopback0
+ ip address 192.168.5.1 255.255.255.255
+!
+interface FastEthernet0/1
+ ip address 192.168.45.5 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ ip address 192.168.25.5 255.255.255.0
+ duplex auto
+ speed auto
+!
+router ospf 92
+ log-adjacency-changes
+ redistribute bgp 65003 subnets
+ network 192.168.0.0 0.0.255.255 area 0
+!
+router bgp 65003
+ synchronization
+ bgp log-neighbor-changes
+ network 192.168.25.0
+ network 192.168.45.0
+ neighbor 192.168.3.1 remote-as 65003
+ neighbor 192.168.3.1 update-source Loopback0
+ neighbor 192.168.25.2 remote-as 65002
+ no auto-summary
+!
+ip forward-protocol nd
+!
